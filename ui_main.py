@@ -14,17 +14,17 @@ class FuzzyTipUI(QWidget):
 
         # Еда
         food_layout = QHBoxLayout()
-        food_layout.addWidget(QLabel("Оценка еды (1-10):"))
+        food_layout.addWidget(QLabel("Оценка еды (0-10):"))
         self.food_spin = QSpinBox()
-        self.food_spin.setRange(1, 10)
+        self.food_spin.setRange(0, 10)
         food_layout.addWidget(self.food_spin)
         layout.addLayout(food_layout)
 
         # Сервис
         service_layout = QHBoxLayout()
-        service_layout.addWidget(QLabel("Оценка сервиса (1-10):"))
+        service_layout.addWidget(QLabel("Оценка сервиса (0-10):"))
         self.service_spin = QSpinBox()
-        self.service_spin.setRange(1, 10)
+        self.service_spin.setRange(0, 10)
         service_layout.addWidget(self.service_spin)
         layout.addLayout(service_layout)
 
